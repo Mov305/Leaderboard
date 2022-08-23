@@ -33,7 +33,7 @@ Run the following commands to clone and run it.
 
 ### To clone the repository
 
-git clone https://github.com/Mov305/To-do
+git clone https://github.com/Mov305/Leaderboard
 
 ### To enter Directory
 
