@@ -4,34 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Libr</title>
-    <link rel="stylesheet" href="./index.css" />
+    <title>Leaderboard</title>
   </head>
   <body>
     <nav>
       <h1>Leaderboard</h1>
-      <span id="date">asdfasdf</span>
+      <span id="date">date</span>
     </nav>
     <main>
       <section id="sec1" class="">
-        <h1>Awesome Books</h1>
+        <div>
+          <h2>Awesome Books</h2>
+          <button>Refresh</button>
+        </div>
         <ul id="listOfBooks"></ul>
       </section>
       <section id="sec2" class="hidden">
         <form action="#">
-          <h2>Add a Book</h2>
+          <h2>Add Your Score</h2>
           <br />
-          <input type="text" id="bookTitle" placeholder="Title" />
+          <input type="text" id="name" placeholder="Your Name" />
           <br />
-          <input type="text" id="bookAuthor" placeholder="Author" />
+          <input type="text" id="score" placeholder="Your Score" />
           <br />
-          <button class="form-button" id="addButton" type="button">Add</button>
+          <button class="form-button" id="addButton" type="button">Submit</button>
         </form>
       </section>
     </main>
     <footer>
       <p>Copyrights  <span>...</span> </p>
     </footer>
-    <script type="module" src="./index.js"></script>
   </body>
 </html>

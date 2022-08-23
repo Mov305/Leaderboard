@@ -31,14 +31,12 @@ nav {
   align-items: center;
 }
 
-#navList {
+main {
+  width: 100%;
   display: flex;
-  list-style-type: none;
-}
-
-#navList > li {
-  padding: 0 15px;
-  cursor: pointer;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #sec1 ul li {
@@ -46,14 +44,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
-}
-
-#navList > li:nth-child(n + 2) {
-  border-left: 1px solid black;
-}
-
-#navList > li:hover {
-  color: gray;
 }
 
 #sec1 ul {
@@ -107,3 +97,9 @@ footer {
   align-items: center;
 }
 
+@media screen and (min-width:600px) {
+  main {
+    flex-direction: row;
+    padding: 100px 0;
+  }
+}
