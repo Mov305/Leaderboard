@@ -1,10 +1,12 @@
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
+const date = document.getElementById('date');
 
-const date = document.querySelector('#date');
-const dt = DateTime.now() || Date();
-
-const showDate = () => {
-  date.innerHTML = dt;
+const setDate = () => {
+  let now = new Date();
+  date.innerHTML = now.toUTCString();
+  setInterval(() => {
+    now = new Date();
+    date.innerHTML = now.toUTCString();
+  }, 60000);
 };
 
-export default showDate;
+export default setDate;
