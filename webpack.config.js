@@ -6,11 +6,11 @@ module.exports = {
   entry: './index.js',
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'built'),
+    path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   devServer: {
-    static: '/built',
+    static: '/dist',
   },
   plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
   module: {
