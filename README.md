@@ -1,20 +1,20 @@
 # Porfolio
 
-Awesome Books Library, Add your favorate bookes and remove them if you like
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved
 
 ## Live Demo
 
-[Click me](https://book-l.vercel.app/)
+[Not available yet]()
 
 ## Built With
 
-GitHub
-GitHub Flow
-Visual Studio Code
-HTML
-CSS
-Javascript
-luxon
+GitHub,
+GitHub Flow,
+Visual Studio Code,
+HTML,
+CSS,
+Javascript,
+Webpack,
 
 ## Getting Started
 
@@ -27,15 +27,39 @@ To get a local copy up and running follow these simple example steps.
 4- install the node packages via npm install
 4- to Check for linters run (npx hint .) for html code fixed and npx stylelint "\*_/_.{css,scss}"
 
+### Clone and review it
+
+Run the following commands to clone and run it.
+
+### To clone the repository
+
+git clone https://github.com/Mov305/To-do
+
+### To enter Directory
+
+cd ToDoList
+
+### To Install Packages
+
+npm install
+
+### To run project on local server
+
+npm start
+
+### To open project with vs code
+
+code .
+
 ## Author
 
 GitHub:
 [@Mov305](https://github.com/Mov305)
-Linkedin: Abdelrhman samy
+Linkedin: [Abdelrhman samy](https://www.linkedin.com/in/abdelrhman-samy-80b14b215/)
 
 ## Contributing
 
-Contributions, issues, and reviews are very welcome!
+Contributions, issues, and reviews are very welcome! 
 
 ## Support
 
@@ -47,7 +71,8 @@ Microverse Community
 GitHub Repositories
 Awesome Books template
 Inspiration
+[Leaderboard API service](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
-## License
+## 📝 License
 
-This project is ME licensed.
+This project is [MIT](https://github.com/Mov305/To-do-list/blob/master/MIT.md) licensed.
