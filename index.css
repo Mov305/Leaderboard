@@ -25,17 +25,10 @@ section {
 nav {
   display: flex;
   justify-content: space-between;
-  border: 3px solid black;
   width: calc(100% - 20px);
   margin: 10px;
   padding: 10px;
   align-items: center;
-}
-
-#date {
-  position: fixed;
-  top: 10vh;
-  right: 5vw;
 }
 
 #navList {
@@ -114,24 +107,3 @@ footer {
   align-items: center;
 }
 
-.hidden {
-  display: none;
-}
-
-.active {
-  color: blue;
-}
-
-#sec3 h2 {
-  margin: 30px;
-}
-
-#sec3 p {
-  margin: 20px;
-}
-
-#sec3 ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
