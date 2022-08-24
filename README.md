@@ -37,7 +37,7 @@ git clone https://github.com/Mov305/Leaderboard
 
 ### To enter Directory
 
-cd Leaderboard
+cd leaderboard
 
 ### To Install Packages
 
