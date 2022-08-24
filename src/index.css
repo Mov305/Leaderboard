@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: sans-serif;
   height: 100vh;
   justify-content: space-between;
   overflow: hidden;
@@ -85,7 +85,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   align-items: center;
 }
 
@@ -116,6 +116,23 @@ footer {
   margin: 10px;
   padding: 10px;
   align-items: center;
+}
+
+#alert {
+  position: fixed;
+  width: 70%;
+  padding: 50px 10px;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: white;
+  box-shadow: 2px 3px 2px #b8b8b8c7;
+  border: 1px solid #b8b8b8c7;
+}
+
+.hide-alert {
+  display: none;
 }
 
 @media screen and (min-width: 600px) {
