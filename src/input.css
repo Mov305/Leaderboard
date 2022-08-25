@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex flex-col items-center font-sans min-h-[100vh]  overflow-x-hidden;
+
+  background: url('./../assets/pattern.svg') center center no-repeat;
+}
+
+nav {
+  @apply bg-white w-full my-14 flex-col relative;
+}
+
+#sec1 {
+  @apply flex flex-col gap-3 items-center;
+}
+
+#listOfBooks {
+  @apply list-none p-0 flex flex-col;
+}
+
+li {
+  @apply flex gap-2 my-3 w-full justify-between font-bold;
+}
+
+span {
+  @apply block;
+}
+
+li > div {
+  @apply flex-grow flex bg-slate-100;
+}
+
+li > div > p {
+  @apply py-2 px-1 whitespace-nowrap;
+}
+
+li > span {
+  @apply bg-slate-100 p-2 w-24 text-center;
+}
+
+li > div > span {
+  @apply hidden  xs:block !important;
+}
+
+li:nth-child(1) > div > span {
+  background: url(../assets/md1.svg) no-repeat;
+
+  @apply block w-12 mx-3 scale-125 bg-contain;
+}
+
+li:nth-child(2) > div > span {
+  background: url(../assets/md2.svg) no-repeat;
+
+  @apply block w-12 mx-3 scale-125 bg-contain;
+}
+
+li:nth-child(3) > div > span {
+  background: url(../assets/md3.svg) no-repeat;
+
+  @apply block w-12 mx-3 scale-125 bg-contain;
+}
+
+li:nth-child(n + 4) > div > span {
+  background: url(../assets/st.svg) no-repeat;
+
+  @apply block w-12 mx-3 scale-125 bg-contain;
+}
+
+form {
+  @apply flex flex-col gap-1 p-5 md:gap-2;
+}
+
+#alert {
+  @apply backdrop-blur-[10px] text-2xl text-black rounded-2xl bg-[#ed96f680];
+}

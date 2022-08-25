@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build":"npx webpack --config webpack.config.js"
+    "build": "npx webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -33,10 +33,13 @@
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.26.0",
+    "favicons": "^7.0.0-beta.5",
+    "favicons-webpack-plugin": "^5.0.2",
     "hint": "^7.1.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+    "stylelint-scss": "^3.21.0",
+    "tailwindcss": "^3.1.8"
   }
 }

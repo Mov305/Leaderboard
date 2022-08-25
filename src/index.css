@@ -1,94 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-h1 {
-  font-size: 1.8rem;
-}
-
-h2 {
-  font-size: 1.3rem;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: sans-serif;
-  height: 100vh;
-  justify-content: space-between;
-  overflow: hidden;
-  font-size: larger;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: calc(100% - 20px);
-  margin: 10px;
-  padding: 10px;
-  align-items: center;
-}
-
-main {
-  width: 100%;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-#sec1 ul li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-#sec1 ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  border: 3px solid black;
-  width: 40vw;
-}
-
-#sec1 ul li:nth-child(2n) {
-  background-color: rgb(184, 184, 184);
-}
-
-#sec1 > div {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-ul li button {
-  padding: 5px;
-  background-color: white;
-  border: 2px solid black;
-  box-shadow: 3px 4px black;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  font-family: 'Trebuchet MS', sans-serif;
-  align-items: center;
-}
-
 form input {
   border: 3px solid black;
   height: 40px;
@@ -105,7 +14,7 @@ form input {
 
 .form-button:hover {
   cursor: pointer;
-  background-color: azure;
+  background-color: rgba(228, 99, 235, 0.554);
   transition: all ease-in-out 0.2s;
 }
 
@@ -121,12 +30,11 @@ footer {
 #alert {
   position: fixed;
   width: 70%;
+  margin: auto;
+  margin-top: 15%;
+  height: 50vh;
   padding: 50px 10px;
   text-align: center;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  background-color: white;
   box-shadow: 2px 3px 2px #b8b8b8c7;
   border: 1px solid #b8b8b8c7;
 }
@@ -135,41 +43,22 @@ footer {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
-  h1 {
-    font-size: 3rem;
-  }
+input ::-webkit-input-placeholder {
+  color: white;
+}
 
-  h2 {
-    font-size: 1.6em;
-  }
+input ::-moz-placeholder {
+  color: white;
+}
 
-  nav {
-    flex-direction: row;
-  }
+input :-ms-input-placeholder {
+  color: white;
+}
 
-  main {
-    flex-direction: row;
-    padding: 100px 0;
-  }
+input ::-ms-input-placeholder {
+  color: white;
+}
 
-  #sec1 > div {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: 100%;
-  }
-
-  .form-button {
-    width: 100px;
-    height: 40px;
-    box-shadow: 3px 4px black;
-  }
-
-  form input {
-    width: 100%;
-  }
-
-  form {
-    gap: 5px;
-  }
+input ::placeholder {
+  color: white;
 }
