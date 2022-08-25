@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply flex flex-col items-center font-sans h-[100vh] justify-between overflow-hidden;
+    background: url('./../assets/pattern.svg') center center;
+
+}
+
+nav {
+    @apply bg-white w-full my-14 flex-col relative ;
+}

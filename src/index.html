@@ -9,18 +9,21 @@
   <body>
     <div class="hide-alert" id="alert"></div>
     <nav>
-      <h1>Leaderboard</h1>
-      <span id="date">date</span>
+      <div class="flex justify-between">
+        <img id="logo" class=" w-24 sm:w-28 sm:mx-2 md:mx-10 xl:mx-24" alt="logo" />
+        <h1 class=" font-semibold sm:font-bold text-xl sm:text-4xl md:text-5xl p-1 pt-6 sm:px-2 md:px-6">LEADERBOARD</h1>
+      </div>
+      <span class=" whitespace-nowrap text-xs md:text-xl -translate-y-[50%] w-[70%] right-0 block absolute text-right py-4 p-2 md:px-6 bg-[#301781] text-white md:font-semibold" id="date">date</span>
     </nav>
-    <main>
+    <main class="w-full flex flex-grow flex-col md:flex-row justify-around">
       <section id="sec1" class="">
         <div>
-          <h2>Awesome Books</h2>
+          <h2>Recent scores</h2>
           <button type="button" id="refresh" class="form-button">Refresh</button>
         </div>
         <ul id="listOfBooks"></ul>
       </section>
-      <section id="sec2" class="hidden">
+      <section id="sec2">
         <form action="#">
           <h2>Add Your Score</h2>
           <br />
