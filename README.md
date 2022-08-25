@@ -4,9 +4,10 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ## Live Demo
 
-[Not available yet]()
+[Click me](https://mov305.github.io/Leaderboard/dist/)
 
 ## Built With
+
 
 GitHub,
 GitHub Flow,

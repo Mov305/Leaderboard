@@ -7,25 +7,28 @@
     <title>Leaderboard</title>
   </head>
   <body>
-    <div class="hide-alert" id="alert"></div>
+    <div class="hide-alert z-10" id="alert"></div>
     <nav>
       <div class="flex justify-between">
-        <img id="logo" class=" w-24 sm:w-28 sm:mx-2 md:mx-10 xl:mx-24" alt="logo" />
+        <img src="#" id="logo" class=" w-24 sm:w-28 sm:mx-2 md:mx-10 xl:mx-24" alt="logo" />
         <h1 class=" font-semibold sm:font-bold text-xl sm:text-4xl md:text-5xl p-1 pt-6 sm:px-2 md:px-6">LEADERBOARD</h1>
       </div>
       <span class=" whitespace-nowrap text-xs md:text-xl -translate-y-[50%] w-[70%] right-0 block absolute text-right py-4 p-2 md:px-6 bg-[#301781] text-white md:font-semibold" id="date">date</span>
     </nav>
-    <main class="w-full flex flex-grow flex-col md:flex-row justify-around">
-      <section id="sec1" class="">
-        <div>
-          <h2>Recent scores</h2>
+    <main class="w-full flex flex-grow flex-col md:flex-row justify-evenly">
+      <section id="sec1" class="md:w-[50%]">
+        <div class="flex justify-between gap-3 w-full p-5 md:px-0">
+          <h2 class="text-xl font-semibold md:text-3xl">Recent scores</h2>
           <button type="button" id="refresh" class="form-button">Refresh</button>
         </div>
-        <ul id="listOfBooks"></ul>
+        <div class="w-full p-5 md:px-0">
+          <div class="flex justify-between gap-2 font-semibold"><span class="px-2 w-24 text-center">Rank</span><span class="flex-grow text-center">Name</span><span class="px-2 w-24 text-center">Score</span></div>
+          <ul class=" max-h-[45vh] overflow-auto" id="listOfBooks"></ul>
+        </div>
       </section>
-      <section id="sec2">
+      <section class="my-12 md:my-0" id="sec2">
         <form action="#">
-          <h2>Add Your Score</h2>
+          <h2 class=" text-xl md:text-2xl font-semibold">Add Your Score</h2>
           <br />
           <input type="text" id="name" placeholder="Your Name" />
           <br />
@@ -36,7 +39,7 @@
       </section>
     </main>
     <footer>
-      <p>Copyrights <span> ... abd3052001@gmail.com</span></p>
+      <p>Copyrights <span class=" inline"> ... abd3052001@gmail.com</span></p>
     </footer>
   </body>
 </html>

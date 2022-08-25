@@ -75,7 +75,7 @@ class Game {
         const div = document.createElement('div');
         const p = document.createElement('p');
 
-        span1.textContent = `${rank + 1}.`;
+        span1.textContent = rank + 1;
         p.textContent = ele.user;
         span2.textContent = ele.score;
 
